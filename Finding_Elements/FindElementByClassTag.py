@@ -5,6 +5,7 @@ class Findbyclasstag():
         BaseUrl = "https://letskodeit.teachable.com/p/practice"
         driver = webdriver.Chrome()
         driver.get(BaseUrl)
+        # If we provide complete class name such like "inputs distribute" , then it will not take, so we should take single name from the entire class by using css
         ElementByclass = driver.find_element_by_class_name("inputs")
         if ElementByclass is not None:
             print("Found an element class")
