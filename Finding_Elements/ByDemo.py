@@ -7,16 +7,16 @@ class ByDemo():
         driver = webdriver.Chrome()
         driver.get(BaseUrl)
 
-        ElementById = driver.find_elements(By.ID, "name")
+        ElementById = driver.find_element(By.ID, "name")
 
         if ElementById is not None:
             print("Found an element ID")
-        ElementByXpath = driver.find_elements(By.XPATH, "//input[@id='displayed-text']")
+        ElementByXpath = driver.find_element(By.XPATH, "//input[@id='displayed-text']")
 
         if ElementByXpath is not None:
             print("Found an element Xpath")
 
-        ElementByLinkText = driver.find_elements(By.LINK_TEXT, "Login")
+        ElementByLinkText = driver.find_element(By.LINK_TEXT, "Login")
 
         if ElementByLinkText is not None:
             print("Found an element Link Text")
