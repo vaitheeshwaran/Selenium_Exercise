@@ -7,10 +7,20 @@ class ChromeTest():
     def basicrun(self):
         # Provide the chrome driver path
         # driver = webdriver.Chrome(executable_path="D:\study\python\Drivers\chromedriver.exe")
+
         # if this programs runs to different OS platform, then Above will not worked. check below
-        #driverlocation = "D:\study\python\Drivers\chromedriver.exe"
-        #os.environ("Webdriver chrome location") = driverlocation
-        driver = webdriver.Chrome(driverlocation)
+        # driverlocation = "D:\study\python\Drivers\chromedriver.exe"
+        # os.environ("Webdriver chrome location") = driverlocation
+        # driver = webdriver.Chrome(driverlocation)
+
+
+        # If any Warning: Potential Security Risk Ahead message, then we have to add below line for chrome
+        # opt = webdriver.ChromeOptions()
+        # opt.add_argument('ignore-certificate-errors')
+        # opt.add_argument('acceptInsecureCerts')
+        # driver = webdriver.Chrome(options=opt)
+
+
         # Without The Driver path set ( For Linux all drivers put together into /usr/local/bin directory, In Windows add the system path in enviroinment variables )
         driver = webdriver.Chrome()
         # Launch the google site
