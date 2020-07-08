@@ -14,7 +14,7 @@ class Bowser_Interaction_Method():
 
         # Get Title
         title = driver.title
-        Print("The current page Title is:", title)
+        print("The current page Title is:", title)
 
         # Get the current Url
         CurrentUrl = driver.current_url
@@ -23,10 +23,10 @@ class Bowser_Interaction_Method():
         # Refresh the browser
         print("Browser refresh the first time")
         driver.get(CurrentUrl)
-        print("Browser refresh the second time")
+        print("Browser refresh the second time: " + driver.current_url)
 
         # Open another url
-        driver.get("https://letskodeit.teachable.com/sign_in")
+        driver.get("https://sso.teachable.com/secure/42299/users/sign_in?clean_login=true&reset_purchase_session=1")
         CurrentUrl = driver.current_url
         print("Current url of the page is " + CurrentUrl)
 
@@ -47,7 +47,7 @@ class Bowser_Interaction_Method():
         print("Page source is \n" + PageSoure)
 
         # Browser Quit / Close
-        print("driver has closed")
+        # print("driver has closed")
         # driver.close()
         print("Driver has quitted")
         driver.quit()
