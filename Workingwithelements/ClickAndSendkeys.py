@@ -24,7 +24,9 @@ class ClickAndSendKeys():
 
         # Pass the email name
         emailField = driver.find_element(By.ID, "user_email")
-        emailField.send_keys("test")
+        # In some websites there will be more Id's will be there, but some Id's has disabled. In that case we cannot send keys. so We have to find the non disabled keys and send it out
+        if emailField.is_enabled():
+            emailField.send_keys("test_enable")
 
         # Pass the password
         passwordField = driver.find_element(By.ID, "user_password")
