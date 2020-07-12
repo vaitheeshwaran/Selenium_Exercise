@@ -14,7 +14,13 @@ class GetText():
 
         openTabElement = driver.find_element(By.ID, "opentab")
         elementText = openTabElement.text
-        print("Text on element is: " + elementText)
+
+        # Another method to find the text, But we have to format string the output
+        openTabElement1 = driver.find_element(By.ID, "opentab")
+        elementText1 = openTabElement1.get_attribute("innerText")
+
+        print("Text on element1 is: " + elementText)
+        print("Text on element2 is: " + str(elementText1))
         time.sleep(1)
         driver.quit()
 
