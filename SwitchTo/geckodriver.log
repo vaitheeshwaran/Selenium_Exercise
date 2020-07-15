@@ -1,0 +1,60 @@
+1594821518803	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\VAITHE~1.V\\AppData\\Local\\Temp\\rust_mozprofilekfGybA"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+1594821527816	Marionette	INFO	Listening on port 57393
+1594821528393	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://fedora.teachablecdn.com/packs/student-legacy-d6d2ecb14ef6aa788140.js, line 239: TypeError: document.querySelector(...) is null
+console.warn: LoginRecipes: "getRecipes: falling back to a synchronous message for:" "https://letskodeit.teachable.com"
+console.error: "Store does not have a valid reducer. Make sure the argument passed to combineReducers is an object whose values are reducers."
+*************************
+A coding exception was thrown in a Promise resolution callback.
+See https://developer.mozilla.org/Mozilla/JavaScript_code_modules/Promise.jsm/Promise
+
+Full message: TypeError: this._containers is null
+Full stack: getContainer@resource://devtools/client/inspector/markup/markup.js:780:5
+showNode/<@resource://devtools/client/inspector/markup/markup.js:1570:32
+process@resource://gre/modules/Promise-backend.js:961:38
+walkerLoop@resource://gre/modules/Promise-backend.js:845:29
+scheduleWalkerLoop/<@resource://gre/modules/Promise-backend.js:778:14
+
+*************************
+console.error: "stylesheets actor: fetch failed for https://themes2.teachablecdn.com/themecss/production/base.css?_=77e1742d2382&brand_course_heading=%23ffffff&brand_heading=%232b3636&brand_homepage_heading=%23ffffff&brand_navbar_fixed_text=%23ffffff&brand_navbar_text=%23ffffff&brand_primary=%232b3636&brand_secondary=%2309A59A&brand_text=%232b3636&logged_out_homepage_background_image_overlay=0.0&show_login=true&show_signup=true, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getLayout'" "node is null"
+console.error: "getLayout@resource://devtools/server/actors/styles.js:1013:5\nhandler@resource://devtools/shared/protocol/Actor.js:162:37\nonPacket@resource://devtools/server/devtools-server-connection.js:380:58\nreceiveMessage@resource://devtools/shared/transport/child-transport.js:66:16\n"
+console.error: (new Error("Protocol error (TypeError): node is null from: server0.conn0.child2/pagestyle26 (resource://devtools/server/actors/styles.js:1013:5)", "resource://devtools/shared/protocol/Front.js", 323))
+JavaScript error: https://fedora.teachablecdn.com/packs/student-legacy-d6d2ecb14ef6aa788140.js, line 239: TypeError: document.querySelector(...) is null
+Handler function threw an exception: TypeError: this.walker is null
+Stack: get conn@resource://devtools/server/actors/inspector/node.js:182:5
+getParent@resource://devtools/shared/protocol/Pool.js:40:5
+destroy@resource://devtools/shared/protocol/Pool.js:165:25
+destroy@resource://devtools/shared/protocol/Actor.js:76:11
+destroy@resource://devtools/server/actors/inspector/node.js:193:38
+destroy@resource://devtools/shared/protocol/Pool.js:189:17
+destroy@resource://devtools/shared/protocol/Actor.js:76:11
+destroy@resource://devtools/server/actors/styles.js:153:38
+destroy@resource://devtools/shared/protocol/Pool.js:189:17
+destroy@resource://devtools/shared/protocol/Actor.js:76:11
+destroy@resource://devtools/server/actors/inspector/inspector.js:126:38
+destroy@resource://devtools/shared/protocol/Pool.js:189:17
+_detach@resource://devtools/server/actors/targets/browsing-context.js:991:35
+exit@resource://devtools/server/actors/targets/browsing-context.js:573:10
+destroy@resource://devtools/server/actors/targets/browsing-context.js:554:10
+removeActor@resource://devtools/server/actors/common.js:63:13
+APDestroy@resource://devtools/server/actors/common.js:28:12
+onClosed/<@resource://devtools/server/devtools-server-connection.js:477:37
+onClosed@resource://devtools/server/devtools-server-connection.js:477:22
+close@resource://devtools/shared/transport/child-transport.js:62:16
+close@resource://devtools/server/devtools-server-connection.js:86:23
+onDisconnect<@resource://devtools/server/startup/frame.js:145:12
+exports.makeInfallible/<@resource://devtools/shared/ThreadSafeDevToolsUtils.js:103:22
+Line: 182, column: 5
+console.error: (new TypeError("this.walker is null", "resource://devtools/server/actors/inspector/node.js", 182))
+1594821614990	Marionette	INFO	Stopped listening on port 57393
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
