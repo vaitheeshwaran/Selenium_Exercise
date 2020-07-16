@@ -1,3 +1,5 @@
-07/16/2020 09:53:47 PM: WARNING: warning message
-07/16/2020 09:53:47 PM: INFO: info message
-07/16/2020 09:53:47 PM: ERROR: error message
+07/16/2020 10:28:29 PM - LoggerDemoConf - DEBUG - debug message
+07/16/2020 10:28:29 PM - LoggerDemoConf - INFO - info message
+07/16/2020 10:28:29 PM - LoggerDemoConf - WARNING - warn message
+07/16/2020 10:28:29 PM - LoggerDemoConf - ERROR - error message
+07/16/2020 10:28:29 PM - LoggerDemoConf - CRITICAL - critical message
