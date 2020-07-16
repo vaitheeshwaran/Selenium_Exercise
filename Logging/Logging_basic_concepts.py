@@ -6,10 +6,25 @@ INFO
 WARNING
 ERROR
 CRITICAL
+
+Logging Format
+https://docs.python.org/3/library/logging.html#logrecord-attributes
+https://docs.python.org/3/library/time.html#time.strftime
+
 """
 import logging
 
-logging.basicConfig(filename="test.log", level=logging.WARNING)
+
+logging.basicConfig(filename='test.log', filemode='w', format='%(asctime)s: %(levelname)s: %(message)s',
+                    datefmt='%m/%d/%Y %I:%M:%S %p', level=logging.DEBUG)
+
+"""
+:param 
+fileName: logs located file
+filemode: Mode of the file has to proceed log operation [ Without giving parameter , it automatically takes Append mode ]
+format  : How to represent with log messages
+datefmt : How to represent date in format asctime
+"""
 logging.warning("warning message")
 logging.info("info message")
 logging.error("error message")
