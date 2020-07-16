@@ -58,3 +58,23 @@ console.error: (new TypeError("this.walker is null", "resource://devtools/server
 
 ###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
 
+1594882464698	mozrunner::runner	INFO	Running command: "C:\\Program Files\\Mozilla Firefox\\firefox.exe" "-marionette" "-foreground" "-no-remote" "-profile" "C:\\Users\\VAITHE~1.V\\AppData\\Local\\Temp\\rust_mozprofileh0f5Jj"
+JavaScript error: resource://gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594882477265	Marionette	INFO	Listening on port 53808
+1594882479215	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: https://fedora.teachablecdn.com/packs/student-legacy-53a2a7e2cf29685550e5.js, line 239: TypeError: document.querySelector(...) is null
+1594882604562	Marionette	INFO	Stopped listening on port 53808
+
+###!!! [Child][RunMessage] Error: Channel closing: too late to send/recv, messages will be lost
+
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
+//gre/modules/XULStore.jsm, line 66: Error: Can't find profile directory.
+1594882554655	Marionette	INFO	Listening on port 53920
+1594882555006	Marionette	WARN	TLS certificate errors will be ignored for this session
+console.error: (new Error("SessionFile is closed", "resource:///modules/sessionstore/SessionFile.jsm", 433))
+1594882618957	Marionette	INFO	Stopped listening on port 53920
+
+###!!! [Child][MessageChannel::SendAndWait] Error: Channel error: cannot send/recv
+
