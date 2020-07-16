@@ -8,7 +8,7 @@ class LoggerDemoConsole():
     def testLog(self):
         # create logger
         # logger = logging.getLogger(LoggerDemoConsole.__name__)
-        logger = logging.getLogger("sample_log")
+        logger = logging.getLogger(LoggerDemoConsole.__name__)
         # First it will assign only logger if severity of logger > consoleHandler, Otherwise it will take consoleHandler.
         # ( Basically consoleHandler is less or equal to Logger severity )
         logger.setLevel(logging.INFO)
