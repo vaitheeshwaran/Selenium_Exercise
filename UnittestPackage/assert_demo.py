@@ -1,5 +1,14 @@
 """
 https://docs.python.org/3/library/unittest.html#unittest.TestCase
+
+Just follow this link to see how you can add PYTHONPATH to environment variable
+
+Windows:
+http://stackoverflow.com/questions/3701646/how-to-add-to-the-pythonpath-in-windows-7
+
+Mac:
+http://stackoverflow.com/questions/3387695/add-to-python-path-mac-os-x
+
 """
 import unittest
 
