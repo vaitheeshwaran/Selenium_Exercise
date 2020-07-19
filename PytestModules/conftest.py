@@ -19,8 +19,24 @@ def setUp():
     yield
     print("\nRunning conftest After execution")
 
-@pytest.fixture(scope="package") # Scope we can assing module level(each file level)
-def OneTimeSetUp():
+@pytest.fixture(scope="package")  # Scope we can assing module and session level(each file level)
+def OneTimeSetUp(browser,osType):
     print("\nRunning One time conftest demo1 setUp")
+    if browser == 'firefox':
+        print("Running tests on FF")
+    else:
+        print("Running tests on chrome")
     yield
-    print("\nRunning One time conftest After execution")
+    print("Running one time tearDown")
+
+def pytest_addoption(parser):
+    parser.addoption("--browser")
+    parser.addoption("--osType", help="Type of operating system")
+
+@pytest.fixture(scope="session")
+def browser(request):
+    return request.config.getoption("--browser")
+
+@pytest.fixture(scope="session")
+def osType(request):
+    return request.config.getoption("--osType")
