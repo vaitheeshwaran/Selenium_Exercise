@@ -1,2 +1,2 @@
-# Selenium_Exercise
-In this repository is having selenium basic programming using Python
+# Selenium
+Complete Selenium course with using Pthon
