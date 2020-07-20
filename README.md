@@ -1,2 +1,2 @@
 # Selenium
-Complete Selenium course with using Pthon
+Complete Selenium course using Pthon
