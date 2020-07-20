@@ -32,6 +32,7 @@ def OneTimeSetUp(browser,osType):
 def pytest_addoption(parser):
     parser.addoption("--browser")
     parser.addoption("--osType", help="Type of operating system")
+    parser.addoption("--passWD", action="store", help="Type the administrator password")
 
 @pytest.fixture(scope="session")
 def browser(request):
