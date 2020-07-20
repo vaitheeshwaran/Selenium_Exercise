@@ -1,5 +1,4 @@
 import pytest
-import unittest
 
 # get the password from passWD parameter
 @pytest.fixture(scope="session")

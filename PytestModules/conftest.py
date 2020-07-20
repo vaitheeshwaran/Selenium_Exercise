@@ -19,7 +19,7 @@ def setUp():
     yield
     print("\nRunning conftest After execution")
 
-@pytest.fixture(scope="package")  # Scope we can assing module and session level(each file level)
+@pytest.fixture(scope="class")  # Scope we can assing module and session, class  level(each file level)
 def OneTimeSetUp(browser,osType):
     print("\nRunning One time conftest demo1 setUp")
     if browser == 'firefox':
