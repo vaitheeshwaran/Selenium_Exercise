@@ -20,13 +20,17 @@ def setUp():
     print("\nRunning conftest After execution")
 
 @pytest.fixture(scope="class")  # Scope we can assing module and session, class  level(each file level)
-def OneTimeSetUp(browser,osType):
+def OneTimeSetUp(request, browser):
     print("\nRunning One time conftest demo1 setUp")
     if browser == 'firefox':
+        value = 10
         print("Running tests on FF")
     else:
+        value =20
         print("Running tests on chrome")
-    yield
+    if request.cls is not None:
+        request.cls.value = value
+    yield value
     print("Running one time tearDown")
 
 def pytest_addoption(parser):
